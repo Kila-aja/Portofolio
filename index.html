@@ -1,51 +1,121 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Saya</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet"> -->
+    <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <h1>Portofolio Saya</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-    </header>
-
     <nav>
-        <ul>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
+        <!-- <div class="logo">Logo</div> -->
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <section id="about">
-        <img src="images/profile.jpg" alt="Foto Profil">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang pengembang web yang berfokus pada desain dan pengalaman pengguna yang modern.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <div class="project">
-            <img src="images/project1.jpg" alt="Proyek 1">
-            <h3>Website E-Commerce</h3>
-            <p>Desain dan pengembangan toko online dengan fitur lengkap.</p>
-        </div>
-        <div class="project">
-            <img src="images/project2.jpg" alt="Proyek 2">
-            <h3>Aplikasi Manajemen Tugas</h3>
-            <p>Aplikasi berbasis web untuk mengelola tugas harian.</p>
-        </div>
-    </section>
-
     
-    <footer>
-        <p>&copy; 2025 Portfolio Saya</p>
-    </footer>
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2>Hello, I'm</h2>
+            <h1>Priskila Anastasya Soumeru</h1>
+            <h2 class="changing-text">Web Developer</h2>
+            <button class="cv-button">Download CV</button>
+        </div>
+        <img src="asset/2505_10__1_-removebg-preview.png" alt="">
+    </section>
 
-    <script src="style.js"></script>
+    <br>
+    <br>
+    
+
+    <section id="about" class="about">
+        <!-- <h2>About Me</h2> -->
+        <p class="deskripsi">
+            Hi, I'm <strong>Priskila Anastasya Soumeru</strong>, a Software Engineering (RPL) student studying at SMK NEGERI 8 MALANG, who has a great interest in the world of programming and technology. I enjoy learning about software development, web design, and system security.</p>
+        <p class="keterampilan">
+            <h3>Skill</h3>
+            Currently, I am deepening my skills in various programming languages ​​such as <strong>Python, Java, and JavaScript</strong> . I also have experience in building web-based websites using <strong>HTML, CSS</strong> , and frameworks such as <strong>React, Vue js, or Laravel</strong>.</p>
+        <p class="ketertarikan">
+            <h3>Areas of interest</h3>
+            Beyond coding, I’m deeply interested in <span class="highlight">Artificial Intelligence (AI), Cybersecurity, and Gaming</span>. I believe that these fields will shape the future, and I enjoy working on small projects to enhance my skills./p>
+        <p class="tujuan">
+            <h3>Goals and Aspirations</h3>
+            My ultimate goal is to become a <span class="highlight">professional developer</span> who creates innovative solutions. I am always open to learning and collaborating with people who share the same passion.
+        </p>
+    </section>
+
+    <br>
+
+    <!-- <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="asset/todo.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Built with: <strong>React</strong></p>
+                    <a href="https://github.com/Kila-aja/project1" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <img src="asset/Homepage.jpeg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Built with: <strong>JSX</strong></p>
+                    <a href="https://github.com/Kila-aja/project2" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="asset/Konversi.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Built with: <strong>HTML, CSS, JavaScript</strong></p>
+                    <a href="https://conversi-mata-uang.vercel.app/" target="_blank" class="project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for any opportunities or collaborations!</p>
+    
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    
+        <div class="social-links">
+            <a href="mailto:email@example.com"><img src="asset/email.png" alt="Email"></a>
+            <a href="https://linkedin.com/in/username" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Kila-aja" target="_blank"><img src="asset/github.png" alt="GitHub"></a>
+        </div>
+    </section>
+    
+    <button id="backToTop">⬆ Back to Top</button>
+    <script src="java.js"></script>
 </body>
 </html>
