@@ -15,20 +15,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelector(".cv-button").addEventListener("click", function(){
+    const link = document.createElement("a");
+    link.href = "CV Kila.pdf"; 
+    link.download = "CV Kila.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
 const texts = ["Web Developer", "Mobile Programmer", "Game Developer"];
 let index = 0;
 
 function changeText() {
     const textElement = document.querySelector(".changing-text");
 
-    textElement.style.opacity = 0; // Hilangkan teks sejenak
+    textElement.style.opacity = 0; 
     setTimeout(() => {
-        textElement.textContent = texts[index]; // Ganti teks
-        textElement.style.opacity = 1; // Munculkan kembali dengan transisi
-        index = (index + 1) % texts.length; // Loop kembali ke awal jika sudah habis
-    }, 500); // Delay sebelum mengganti teks
+        textElement.textContent = texts[index];
+        textElement.style.opacity = 1; 
+        index = (index + 1) % texts.length; 
+    }, 500);
 }
 
-// Jalankan setiap 3 detik
 setInterval(changeText, 2000);
 
